@@ -173,7 +173,9 @@
                                                                 <td>RG e CPF válidos.</td>
                                                                 <td>2</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td>
+                                                                  <a data-toggle="modal" data-target="#myModal1">Abrir</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>2</td>
@@ -181,7 +183,9 @@
                                                                 <td>Facebook e LinkedIn</td>
                                                                 <td>2</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td>
+                                                                  <a data-toggle="modal" data-target="#myModal2">Abrir</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>3</td>
@@ -189,7 +193,7 @@
                                                                 <td>Sem entradas</td>
                                                                 <td>0</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>4</td>
@@ -197,7 +201,7 @@
                                                                 <td>Delegacia da mulher</td>
                                                                 <td>0</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>5</td>
@@ -205,23 +209,27 @@
                                                                 <td>Processo trabalhista</td>
                                                                 <td>1</td>
                                                                 <td>  <span class="label label-pink">pendente</span></td>
-                                                                <td><a href="#">Abrir</a></td>
+                                                                <td>
+                                                                  <a data-toggle="modal" data-target="#myModal5">Abrir</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td>5</td>
+                                                                <td>6</td>
                                                                 <td>Serasa</td>
                                                                 <td>Regular</td>
-                                                                <td>5</td>
+                                                                <td>1</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td>
+                                                                  <a data-toggle="modal" data-target="#myModal6">Abrir</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td>5</td>
+                                                                <td>7</td>
                                                                 <td>Detran</td>
                                                                 <td>Sem registros</td>
                                                                 <td>0</td>
                                                                 <td><span class="label label-success">válido</span></td>
-                                                                <td><a href="#" onclick="javacript:alert('Versão de testes, esse link abre o que foi encontrado para esse item do candidato')">Abrir</a></td>
+                                                                <td></td>
                                                             </tr>
 
                                                         </tbody>
@@ -256,6 +264,100 @@
             <!-- ============================================================== -->
             <!-- End Right content here -->
             <!-- ============================================================== -->
+
+            <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">Identidade</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Confirmação da pessoa física</h4>
+                            <p>
+                              RG - Válido na Receita federal em 12/02/2016<br/>
+                              CPF - Válido na Receita federal em 12/02/2016<br/>
+                            </p>
+                            <br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+            <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">Redes sociais</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Análise da existência combinada com redes sociais</h4>
+                            <p>
+                              Facebook - <a href="http://facebook.com/jackdaniels" target="_blank">http://facebook.com/jackdaniels</a> em 12/02/2016<br/>
+                              LinkedIn - <a href="http://linkedin.com/jackdaniels" target="_blank">http://linkedin.com/jackdaniels</a> em 12/02/2016<br/>
+                            </p>
+                            <br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+            <div id="myModal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">Histórico do TRT</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Processo n. 3300237-72.2016.5.12.0017 do TRT-2</h4>
+                            <p>RECLAMANTE JACK DANIELS
+                                <br/>ADVOGADO JACK DANIELS IV (OAB: 0000000/SP)
+                                <br/>RECLAMADO EMPRESA DE INTERNET - LTDA
+                                <BR/></p>
+                                <br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-inverse" data-dismiss="modal" onclick="javascript:alert('Versão de testes, ele abre o processo completo para leitura')">Ver o processo</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <div id="myModal6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">Crédito Serasa</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Análise de crédito usando o Serasa</h4>
+                            <p>
+                              1 ocorrência
+                              <br>
+                              Pendência de R$ 120,22 com a empresa Vivo Telecomunicações
+                              <br/>
+                            </p>
+                            <br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
 
         </div>
         <!-- END wrapper -->
